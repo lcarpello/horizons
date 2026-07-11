@@ -17,6 +17,12 @@ cout << "welcome to my project, for help type 'help', otherwise, select your opt
 cin >> uin;
  if (uin == "secret"){
     sf::RenderWindow window(sf::VideoMode({1800, 1600}), "You can code!(or have good guessing skills)");
+    sf::Music music;
+    if (!music.openFromFile("music.ogg")){
+        return 1;
+    }
+    music.play();
+    music.setVolume(100.f);
 
 
     while (window.isOpen())
@@ -43,12 +49,7 @@ cin >> uin;
         window.clear();
         window.draw(sprite5);
         window.display();
-        sf::Music music;
-        music.play();
-        music.setVolume(100.f);
-        if (!music.openFromFile("gamesong.ogg"))
-            return -1;
-    }
+}
 }
 else if (uin == "help"){
     cout << "the options are: add, subtract, pythagorean, interest, multiply, divide and conversion";
