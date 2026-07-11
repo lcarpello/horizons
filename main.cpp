@@ -27,6 +27,9 @@ cin >> uin;
     rectangle.setPosition({20.f, 440.f});
     sf::RectangleShape rectangle1({320.f, 100.f});
     rectangle1.setPosition({1450.f, 440.f});
+    sf::CircleShape triangle(50.f, 3);
+    triangle.setPosition({100.f, 440.f});
+    triangle.setFillColor(sf::Color(100, 250, 50));
 
 
     while (window.isOpen())
@@ -64,6 +67,7 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
         window.draw(sprite5);
         window.draw(rectangle);
         window.draw(rectangle1);
+        window.draw(triangle);
         window.display();
 }
 }
