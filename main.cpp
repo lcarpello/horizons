@@ -23,6 +23,10 @@ cin >> uin;
     }
     music.play();
     music.setVolume(100.f);
+    sf::RectangleShape rectangle({320.f, 100.f});
+    rectangle.setPosition({20.f, 440.f});
+    sf::RectangleShape rectangle1({320.f, 100.f});
+    rectangle1.setPosition({1450.f, 440.f});
 
 
     while (window.isOpen())
@@ -48,6 +52,8 @@ cin >> uin;
         }
         window.clear();
         window.draw(sprite5);
+        window.draw(rectangle);
+        window.draw(rectangle1);
         window.display();
 }
 }
