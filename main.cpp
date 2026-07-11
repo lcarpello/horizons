@@ -23,6 +23,8 @@ cin >> uin;
     }
     music.play();
     music.setVolume(100.f);
+    string downlerabbitholewego = "follow the white rabbit";
+    string key;
     sf::RectangleShape rectangle({320.f, 100.f});
     rectangle.setPosition({20.f, 440.f});
     sf::RectangleShape rectangle1({320.f, 100.f});
@@ -35,8 +37,7 @@ cin >> uin;
 
     while (window.isOpen())
     {
-if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
-{
+if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     
     music.stop();
     if (!music.openFromFile("music.ogg")) {
@@ -44,6 +45,10 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
     }
     music.play();
 }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::L)){
+        //update!!! 
+        cout << "https://" << endl;
+    }
         sf::Texture texture("wyona.jpg", false, sf::IntRect({0, 0}, {1000, 800}));
         sf::Sprite sprite5(texture);
         float desiredW = 1000.f; 
