@@ -35,7 +35,7 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
 {
     
     music.stop();
-    if (!music.openFromFile("next_song.ogg")) {
+    if (!music.openFromFile("music.ogg")) {
         return -1; 
     }
     music.play();
