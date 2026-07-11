@@ -31,6 +31,15 @@ cin >> uin;
 
     while (window.isOpen())
     {
+if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
+{
+    
+    music.stop();
+    if (!music.openFromFile("next_song.ogg")) {
+        return -1; 
+    }
+    music.play();
+}
         sf::Texture texture("wyona.jpg", false, sf::IntRect({0, 0}, {1000, 800}));
         sf::Sprite sprite5(texture);
         float desiredW = 1000.f; 
@@ -40,6 +49,7 @@ cin >> uin;
             sprite5.setScale(sf::Vector2f{
             desiredW / bounds.size.x,
             desiredH / bounds.size.y
+
 });
     sprite5.move({400.f, 0.f});
 
