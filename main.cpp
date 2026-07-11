@@ -28,7 +28,8 @@ cin >> uin;
     sf::RectangleShape rectangle1({320.f, 100.f});
     rectangle1.setPosition({1450.f, 440.f});
     sf::CircleShape triangle(50.f, 3);
-    triangle.setPosition({100.f, 440.f});
+    triangle.setPosition({1600.f, 425.f});
+    triangle.setRotation(sf::degrees(30));
     triangle.setFillColor(sf::Color(100, 250, 50));
 
 
