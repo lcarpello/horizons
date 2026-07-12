@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hmmmmmmm...</title>
+    <style>
+        img{
+            height: 1600px;
+            width: 1800px;
+        }
+        h2{
+            color: #353535;
+        }
+        body{
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>what is the password?</h1>
+    <input type="password" id="box">
+    <button type="submit" onclick="qr()">submit</button>
+    <h2></h2>
+    <script>
+        
+        function qr(){
+            const password = "ixqboxirp";
+            const shift = 3;
+            const value = document.getElementById('box').value;    
+            let result = '';
+          for (let i = 0; i < password.length; i++) {
+            let char = password[i];
+            let code = password.charCodeAt(i);
+            char = String.fromCharCode(((code - 97 + shift) % 26) + 97);
+            result += char;
+            console.log(result);
+            }
+            if (value == result) {
+                const img = document.createElement('img');
+                img.src = 'image.jpg';
+                document.body.appendChild(img);
+                document.querySelector('h2').textContent = 'https://';
+                }
+        }
+
+
+    </script>
+</body>
+</html>
