@@ -12,18 +12,18 @@ int main(){
 float numerationalarabicnumber1;
 float numerationalarabicnumber2;
 float numerationalarabicnumber3;
+string downlerabbitholewego = "follow the white rabbit";
 string uin;
 cout << "welcome to my project, for help type 'help', otherwise, select your option " << endl;
 cin >> uin;
- if (uin == "secret"){
+ if (uin == "wr"){
     sf::RenderWindow window(sf::VideoMode({1800, 1600}), "You can code!(or have good guessing skills)");
     sf::Music music;
-    if (!music.openFromFile("music.ogg")){
+    if (!music.openFromFile("usr/bin/music.ogg")){
         return 1;
     }
     music.play();
     music.setVolume(100.f);
-    string downlerabbitholewego = "follow the white rabbit";
     string key;
     sf::RectangleShape rectangle({320.f, 100.f});
     rectangle.setPosition({20.f, 440.f});
@@ -40,7 +40,7 @@ cin >> uin;
 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     
     music.stop();
-    if (!music.openFromFile("music.ogg")) {
+    if (!music.openFromFile("usr/bin/source.wav")) {
         return -1; 
     }
     music.play();
@@ -49,7 +49,7 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
         //update!!! 
         cout << "https://tinyurl.com/2nsrup8c" << endl;
     }
-        sf::Texture texture("wyona.jpg", false, sf::IntRect({0, 0}, {1000, 800}));
+        sf::Texture texture("usr/bin/wyona.jpg", false, sf::IntRect({0, 0}, {1000, 800}));
         sf::Sprite sprite5(texture);
         float desiredW = 1000.f; 
         float desiredH = 1000.f;
@@ -78,7 +78,8 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
 }
 }
 else if (uin == "help"){
-    cout << "the options are: add, subtract, pythagorean, interest, multiply, divide and conversion" << endl;
+    cout << "the options are: add, subtract, pythagorean, interest, multiply, divide, conversion and circle" << endl;
+    cout << "beware when calculating pi because it can be too good and like blow up your computer(not actually but it could take up a lot of resources as of right now)" << endl;
     cout << "conversions are light year(ly), inch(in), yard(yd), millimeters(mm), centimeters(cm) kilometers(km), meters(m), miles(mi) kilograms(kg), grams(g), milligrams(mg), pounds(lb), stone(st), ton(t), ounce(oz)" << endl;
 }
 else if(uin == "addition"){
