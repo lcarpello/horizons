@@ -8,12 +8,12 @@ for the music player, it was not playing any of the songs so I needed to do a go
 
 ## how to use: 
 1. go to my github @ [mon github](https://github.com/lcarpello/horizons)
-2. download the .zip file with the appimage inside
-3. unzip the folder 
-4. run chmod +x kalkoolator-x86_64.AppImage
-5. run the appimage with ./kalkoolator-x86_64.AppImage
+2. download appimage from the release tab at the right under kal-kool-ator
+3. run chmod +x kalkoolator-x86_64.AppImage
+4. run the appimage with ./kalkoolator-x86_64.AppImage
 
 I tested this on arch linux with the command ./kalkoolator-x86_64.AppImage
-I only used ai to assist with building the appimage because I have no clue what I was doing and it was a last resort as all of the redditors being redditors were like "google is there for a reason" :) I did not use it anywhere else I can assure you.
+I do not believe you need any other dependencies, even so they shouldn't be too hard to access.
+I did not use AI for graphics/audio or code writing but i had to do like 3 hours of research about building an appimage lol.
 thank you for reading
 PS: did you get the final message in the secret webpage? and did you enjoy it?
