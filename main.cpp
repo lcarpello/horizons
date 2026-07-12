@@ -47,7 +47,7 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
 }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::L)){
         //update!!! 
-        cout << "https://" << endl;
+        cout << "https://tinyurl.com/2nsrup8c" << endl;
     }
         sf::Texture texture("wyona.jpg", false, sf::IntRect({0, 0}, {1000, 800}));
         sf::Sprite sprite5(texture);
@@ -452,6 +452,9 @@ else if(uin == "conversion"){
     }
     
 return 0;
+}
+else if (start == "ly"){
+    cout << "follow the white rabbit" << endl;
 }
 else if (uin == "pythagorean"){
     string side;
