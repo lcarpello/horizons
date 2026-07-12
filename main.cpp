@@ -78,7 +78,8 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
 }
 }
 else if (uin == "help"){
-    cout << "the options are: add, subtract, pythagorean, interest, multiply, divide and conversion";
+    cout << "the options are: add, subtract, pythagorean, interest, multiply, divide and conversion" << endl;
+    cout << "conversions are light year(ly), inch(in), yard(yd), millimeters(mm), centimeters(cm) kilometers(km), meters(m), miles(mi) kilograms(kg), grams(g), milligrams(mg), pounds(lb), stone(st), ton(t), ounce(oz)" << endl;
 }
 else if(uin == "addition"){
     cout << "input first number " << endl;
@@ -491,29 +492,45 @@ else if (uin == "circle"){
            cout << "input the radius( diameter / 2): " << endl;
            cin >> radicalradius;
            float diameter = radicalradius * 2 ;
-           //dp: d * pi from math.h
            cout << diameter * M_PI << endl;
     }
 else if (operatioooon == "pi") {
     long long k; 
     long double val = 0.0L;
-//dp: max long value
     for (k = 1; k <= 9223372036854775807; k++) {
-        long double sign = (k % 2 == 1) ? 1.0L : -1.0L;
+        long double sign ;
+        if (k % 2 == 1){
+            sign = 1.0L;
+        }
+        else if(k % 2 == 0){
+            sign = -1.0L;
+        }
         long double term = sign / (2.0L * k - 1.0L);
 
-        val += term;
+        val = val + term;
 
         long double nval = 4.0L * val;
-        //120 chars
-        printf("Approximate PI=%0.120Lf\n", nval);
+        printf("%0.120Lf\n", nval);
         fflush(stdout);
     }
 
     printf("\n");
+
     return 0;
+    //for reader: this code takes k and uses the formula 1/1 - 1/3 + 1/5 ... = 1/4 * pi to calculate pi to 120 digits, this may be impractical as it crashed my computer, but i am not sure if it is because my computer is from the ice age or if it is dangerous, but beware, also, did you find the ctf?
+}
+else if(operatioooon == "area"){
+    int radicalradius;
+    cout << "what is the radius?" << endl;
+    cin >> radicalradius;
+    cout << (radicalradius * radicalradius) * M_PI << endl;
+
 }
 
 }
 } 
-//footer notes, i had absolutly no clue how to do the pi calculator at all, s i just frankensteined together something from a paper on some very smart guys,(i thought i was smart lol) and i tried it, but it might crash the process becsuse sometimes the calculations like are too heavy for my computer that is hanging on my a thread, so beware lol, i have attempted to understand it but i can only half wrap my head around it lol
+//footer: this is like my first time coding in c++ and i am pretty proud of my work, it is no masterpiece now but it is mine
+
+
+
+
