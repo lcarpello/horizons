@@ -14,6 +14,6 @@ for the music player, it was not playing any of the songs so I needed to do a go
 
 I tested this on arch linux with the command ./kalkoolator-x86_64.AppImage
 I do not believe you need any other dependencies, even so they shouldn't be too hard to access.
-I did not use AI for graphics/audio or code writing but i had to do like 3 hours of research about building an appimage lol.
+I did not use AI for graphics/audio or code writing but I did use it to help me build the appimage because it was my first time doing this sort of stuff but I don't think that counts as me using it to code for me?
 thank you for reading
 PS: did you get the final message in the secret webpage? and did you enjoy it?
