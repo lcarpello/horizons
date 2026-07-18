@@ -1,4 +1,5 @@
 # kal-kool-ator
+TO REVIEWER: PLEASE FORGIVE MY UPDATED PLAY LINK AS I FORGOT TO THE LINK WITH THE NAME CHANGE
 Hello!
 My name is liam and this is my readme for kal-kool-ator!
 My project is a all around toolkit for nerdiness, this contains things such as pi calculators, ctfs, conversions, music players and a lot more!
