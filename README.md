@@ -18,3 +18,4 @@ I did not use AI for graphics/audio or code writing but I did use it to help me 
 thank you for reading
 PS: did you get the final message in the secret webpage? and did you enjoy it?
 PPS see the video of the examples please!!! [here!](https://youtu.be/wjvusUH-UxQ)
+VIDEO!!!!!!!!!!!!^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ up here if you can't tell
