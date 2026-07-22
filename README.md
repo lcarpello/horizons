@@ -17,5 +17,5 @@ I do not believe you need any other dependencies, even so they shouldn't be too 
 I did not use AI for graphics/audio or code writing but I did use it to help me build the appimage because it was my first time doing this sort of stuff but I don't think that counts as me using it to code for me?
 thank you for reading
 PS: did you get the final message in the secret webpage? and did you enjoy it?
-#PPS see the video of the examples please!!! [here!](https://youtu.be/wjvusUH-UxQ)
+# PPS see the video of the examples please!!! [here!](https://youtu.be/wjvusUH-UxQ)
 VIDEO!!!!!!!!!!!!^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ up here if you can't tell
